@@ -1,0 +1,72 @@
+*{ font-family: sans-serif; margin: 0;}
+
+dl{ 
+	margin: 60px auto; width: 1150px; 
+}
+
+dt, dd{ 
+
+	padding: 20px; 
+}
+
+dt{ 
+
+	background: #333333; 
+	color: white; border-bottom: 1px solid #141414; 
+	border-top: 1px solid #4E4E4E; cursor: pointer; 
+}
+
+dd{ 
+
+	background: #F5F5F5; 
+	display: none; 
+	line-height: 1.6em; 
+}
+
+dt.activo, dt:hover{ 
+
+	background: #424242; 
+}
+
+dt:before{ 
+	: "▸"; 
+	margin-right: 10px; 
+}
+
+dt.activo:before{ 
+	content: "▾"; 
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+  dl {
+    width: 320px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 687px){
+  dl {
+    width: 530px;
+  }
+}
+
+@media (min-width: 688px) and (max-width: 765px){
+  dl {
+    width: 680px;
+  }
+}
+
+@media (min-width: 768px) {
+  dl {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  dl {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  dl {
+    width: 1150px;
+  }
+}

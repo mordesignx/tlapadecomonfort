@@ -18,6 +18,7 @@
     <!-- Theme CSS -->
     <link href="../../css/freelancer.min.css" rel="stylesheet">
     <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../css/pag.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -26,6 +27,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+   
 
 </head>
 
@@ -138,10 +140,11 @@
             <p class="text-justify">Somos una compañía de rentabilidad de espacios publicitarios con nuestros diferentes paquetes que contienen caracteristicas
             diferentes a lo pedido. Como por ejemplo este paquete de Favoritos Plus, te realizamos una pagina interna con los detalles más
             impactantes de tu compañía, Producto o Negocio.</p>
+                       
         </div>
     </div>
-  <hr>
-  
+<hr>
+   
     <div id="servicio" class="row">
         <div class="col-lg-12">
             <h3>Mis Servicios</h3>
@@ -154,23 +157,65 @@
             <div id="myTabContent1" class="tab-content">
                 <div class="tab-pane fade in active" id="home1">
                     <p class="text-center"><img src="#" alt=""></p>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
+                    <p class="text-justify">Adaptable a dispositivos múltiples. dando una perspectiva moderna y agradable a nuestros clientes, con una interacciión dinámica, flexible y confiable.</p>
                 </div>
                 <div class="tab-pane fade" id="pane2">
                     <p class="text-center"><img src="#" alt=""></p>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
+                    <p class="text-justify">Como compañía, dar una imagen de primera impresión.</p>
                 </div>
                 <div class="tab-pane fade" id="pane3">
                     <p class="text-center"><img src="#" alt=""></p>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit voluptates aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut deserunt ipsa est tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae voluptatem qui consequuntur magni? Deleniti, corporis.</p>
+                    <p class="text-justify">Nos acompaña en todo momento, desde los pquetes a contratar hasta lo mejor de lo mejor..</p>
                 </div>
             </div>
         </div>
     </div>
+<hr>
+     <div class="row">
+        <div class="col-lg-12">
+            <h3>Más Detalles</h3>
 
+            <dl>
+                <dt>Página Web Unica (interna a mxemp)</dt>
+                    <dd>Todos los detalles en un solo lugar-
+                    </dd>
+
+                <dt>Contenido Dinámico</dt>
+                    <dd>Para tener una mejor interaccion con el cliente. dar  conocer tus servicios o productos, de una manera más divertida y segura.</dd>
+
+                <dt>Adaptable a Móviles</dt>
+                    <dd>Con la opcion multiplataforma, en la que eesta diseñada esta pagina, también la pagina interna. será vista tanto en una tablet, como en el celular.</dd>
+
+                <dt>Deja ofertas en este espacio</dt>
+                    <dd>10& de descuento en las primeras compras.</dd>
+
+                <dt>Deja un detalle más cercano de tus productos o servicios</dt>
+                    <dd>Tacos Juan presenta sus grandes tacos</dd>
+                </dl>   
+            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+                <script type="text/javascript">
+                    $('dl dd').hide();
+                    $('dl dt').click(function(){
+                        if ($(this).hasClass('activo')) {
+                            $(this).removeClass('activo');
+                            $(this).next().slideUp();
+                        } else {
+                            $('dl dt').removeClass('activo');
+                            $(this).addClass('activo');
+                            $('dl dd').slideUp();
+                            $(this).next().slideDown();
+                        }
+                    });
+            </script>
+
+        </div>
+    </div>
+  <hr>
+  
     <!--Contacto-->
     <div class="row">
         <div class="col-lg-12">
+            <h3>Contacto</h3>
             
         </div>
     </div>
@@ -241,6 +286,7 @@
     <script src="../../js/contact_me.js"></script>
     <!-- Theme JavaScript -->
     <script src="../../js/freelancer.min.js"></script>
+    
 
 </body>
 </html>
