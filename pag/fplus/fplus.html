@@ -73,7 +73,7 @@
     <!-- Page Content -->
 
     <!-- Page Header -->
-<div class="container">
+<div id ="top" class="container">
 
     <nav class="navbar navbar-default" id="navbar-color">
         <div class="container-fluid">
@@ -136,7 +136,7 @@
 
     <div id="quienessomos" class="row">
         <div class="col-lg-12">
-            <h3>Quienes Somos</h3>
+            <h3>Quienes Somos</h3><hr>
             <p class="text-justify">Somos una compañía de rentabilidad de espacios publicitarios con nuestros diferentes paquetes que contienen caracteristicas
             diferentes a lo pedido. Como por ejemplo este paquete de Favoritos Plus, te realizamos una pagina interna con los detalles más
             impactantes de tu compañía, Producto o Negocio.</p>
@@ -170,57 +170,66 @@
             </div>
         </div>
     </div>
-<hr>
-     <div class="row">
+
+  <hr>
+    <div class="row">
         <div class="col-lg-12">
-            <h3>Más Detalles</h3>
-
-            <dl>
-                <dt>Página Web Unica (interna a mxemp)</dt>
-                    <dd>Todos los detalles en un solo lugar-
-                    </dd>
-
-                <dt>Contenido Dinámico</dt>
-                    <dd>Para tener una mejor interaccion con el cliente. dar  conocer tus servicios o productos, de una manera más divertida y segura.</dd>
-
-                <dt>Adaptable a Móviles</dt>
-                    <dd>Con la opcion multiplataforma, en la que eesta diseñada esta pagina, también la pagina interna. será vista tanto en una tablet, como en el celular.</dd>
-
-                <dt>Deja ofertas en este espacio</dt>
-                    <dd>10& de descuento en las primeras compras.</dd>
-
-                <dt>Deja un detalle más cercano de tus productos o servicios</dt>
-                    <dd>Tacos Juan presenta sus grandes tacos</dd>
-                </dl>   
-            <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-                <script type="text/javascript">
-                    $('dl dd').hide();
-                    $('dl dt').click(function(){
-                        if ($(this).hasClass('activo')) {
-                            $(this).removeClass('activo');
-                            $(this).next().slideUp();
-                        } else {
-                            $('dl dt').removeClass('activo');
-                            $(this).addClass('activo');
-                            $('dl dd').slideUp();
-                            $(this).next().slideDown();
-                        }
-                    });
-            </script>
-
+            <h3>Ubicación Geográfica</h3><hr>
+               <!-- Map -->
+            <section id="contact" class="map">
+                <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+                    <br />
+                    <small>
+                    <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+                    </small>
+                </iframe>
+            </section>
         </div>
     </div>
+
   <hr>
   
     <!--Contacto-->
-    <div class="row">
-        <div class="col-lg-12">
-            <h3>Contacto</h3>
-            
-        </div>
-    </div>
+    
 
-</div>
+
+    <footer id="footer-pag-inter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h3><strong>CONTACTO</strong></h3>
+                    <p>Tlapa de Comonfort, Gro
+                        <br>C.P. 41300</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (757) 000-XXXX</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:ventas@mxemp.com">ventas@mxemp.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="http://www.mxemp.com" target="_blank"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Derechos Reservados &copy; 2016, <a href="http://www.mxemp.com">Mxemp</a></p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+
+
+
+
+</div> <!--CONTENEDOR PRINCIPAL-->
 
 
 
@@ -239,19 +248,16 @@
                     <h3>Social Media</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/mxemp" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
+                                <a href="https://www.twitter.com/mxemp" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>                            
                             <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a href="http://www.mxemp.com" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
                             </li>
                         </ul>
                 </div>
@@ -286,6 +292,7 @@
     <script src="../../js/contact_me.js"></script>
     <!-- Theme JavaScript -->
     <script src="../../js/freelancer.min.js"></script>
+    <script src="js/pagfrend.js"></script>
     
 
 </body>
